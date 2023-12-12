@@ -1,0 +1,18 @@
+
+
+
+Features:
++ when choosing D.O.D you cannot choose a date that is after the current day u filling out the form
+
++ container with tabs:
+  - the tabs are: Booking an appointment, locaiton and openging hours. 
+  - it was created for the most important info users look for to access easily.
+
++ when signing up or login, instead of showing "Signup/Login" it shows "My account" as if you are signing 
+  in a real account.
+
+
+NB:
+
+Other css files had to be made seperately due clashes with the ids and class and the scripts wasn't working in the main.js
+so it had to be placed in the html file.

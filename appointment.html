@@ -1,0 +1,357 @@
+<html>
+
+<head>
+    <title>Book An Appointment</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/appointment.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/swipestyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+
+
+</head>
+
+<body>
+
+  
+    <header>
+
+
+        <section class="section-1">
+            <div><i class="ri-mail-line"></i>info@amandasmithhealth.com</div>
+
+            <div class="block-1">
+                <div class="social-btn">
+                    <ul>
+
+                        <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-whatsapp-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-2">
+          <a href="/index.html">
+            <div class="logo"><img class="logo1" src="/assets/images/logo.png" ></div></a>
+            <div class="phone-apointment">
+                <div class="phone-number"><i class="fas fa-phone"></i> +1 (758) 726-6532</div>
+                <div class="appointment"><a href="appointment.html"><button type="button"> + Book an Appointment</button></a></div>
+            </div>
+        </section>
+
+
+        <nav>
+
+            <div id="toggle-btn">
+                <label for="toggle" id="toggle-btn">
+                    <i class="ri-menu-2-line"></i>
+                    <div class="close-icon" style="display: none;">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </label>
+                <a href="#" class="user-btn"><i class="ri-user-fill"></i></a>
+                <!-- Dropdown Content -->
+                <div class="user-dropdown" id="dropdown-content">
+                    <a href="register.html">Create An Account</a>
+                    <a href="login.html">Sign In</a>
+                </div>
+            </div>
+
+            <script>document.addEventListener("DOMContentLoaded", function () {
+                    const userBtn = document.querySelector('.user-btn');
+                    const userDropdown = document.querySelector('.user-dropdown');
+
+                    userBtn.addEventListener('click', function () {
+                        userDropdown.classList.toggle('show');
+                    });
+
+                    // Close dropdown if clicked outside
+                    document.addEventListener('click', function (event) {
+                        if (!userBtn.contains(event.target) && !userDropdown.contains(event.target)) {
+                            userDropdown.classList.remove('show');
+                        }
+                    });
+                });
+            </script>
+            <input type="checkbox" id="toggle">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About DR. Smith</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="appointment.html">Appointments</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><i class="ri-user-fill"></i> Sign Up/Login <i class="ri-arrow-down-s-fill"></i></a>
+                    <div class="dropdown-content">
+                        <a href="register.html">Create An Account</a>
+                        <a href="login.html">Sign In</a>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+    <section class="scroll-effect-section4">
+
+        <div class="section__container">
+            <div class="header">
+                <h2 class="doctors-title4">Book Now</h2>
+                          <p class="doctorsub4"></p>
+            </div>
+    </section>
+
+
+
+
+
+
+    <form class="appointment-form">
+        <div class="form-row">
+            <!-- Personal Information -->
+            <div class="form-col">
+                <label for="dayOfWeek">Full Name:</label><br><br>
+                <input type="text" placeholder="Full Name" required><br><br>
+                <label for="dayOfWeek">Date Of Birth:</label><br><br>
+                <input type="date" id="dob" placeholder="Date of Birth" required><br><br>
+
+                <script>
+                    document.getElementById('dob').addEventListener('change', function () {
+                        const selectedDate = new Date(this.value);
+                        const now = new Date();
+
+                        if (selectedDate > now) {
+                            this.value = '';
+                            alert('Please select a valid date.');
+                        }
+                    });
+                </script>
+                <label for="dayOfWeek">Contact Number:</label>
+                <br><br><input type="tel" placeholder="Tel. Number (758) 123 - 4567" required><br><br>
+                <label for="dayOfWeek">Email:</label>
+                <br><br><input type="email" placeholder="Email Address" required>
+
+                <br><br><label>Gender:</label><br><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+            </div>
+
+            <!-- Appointment Details -->
+            <div class="form-col">
+                <label for="dayOfWeek">Select Day:</label><br><br>
+                <select id="dayOfWeek" name="dayOfWeek">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                </select><br><br>
+
+                <label for="timeSlot">Select Time Slot:</label><br><br>
+                <select id="timeSlot" name="timeSlot">
+                    <option value="10:00">9:00am - 10:00am</option>
+                    <option value="10:00">10:05am - 11:00am</option>
+                    <option value="10:00">11:05am - 12:00pm</option>
+                    <option value="10:00">1:00pm - 2:00pm</option>
+                    <option value="10:00">2:05pm - 3:00pm</option>
+                    <option value="10:00">3:05pm - 4:00pm</option>
+                    <option value="10:00">4:05pm - 5:00pm</option>
+                </select><br><br>
+
+                <label for="timeSlot">Reason for Visit:</label><br><br>
+                <textarea placeholder=" Reason for Visit/Concern" required></textarea><br><br>
+
+                <label for="dayOfWeek">Type of Appointment:</label><br><br>
+                <select id="appointmentType" name="appointmentType">
+                    <option value="regularCheckup">Regular Checkup</option>
+                    <option value="vaccination">Vaccination</option>
+                    <option value="specializedCare">Specialized Care</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <!-- Existing Patient Login -->
+
+            <div class="form-col">
+                <label>*Did you have any previous surgeries in the past 1 year?</label><br><br>
+                <input type="radio" id="male" name="question1" value="yes">
+                <label for="male">Yes</label>
+                <input type="radio" id="female" name="question1" value="no">
+                <label for="female">No</label><br><br>
+                <textarea placeholder="If yes, what surgery did you have?"></textarea>
+
+
+                <br><br><br><label>*Are you currently consuming any medications or
+                    treatments?</label><br><br>
+                <input type="radio" id="male" name="question" value="yes">
+                <label for="male">Yes</label>
+                <input type="radio" id="female" name="question" value="no">
+                <label for="female">No</label><br><br>
+                <textarea placeholder="If yes, what medication/s or treatment/s?"></textarea>
+            </div>
+
+
+            <!-- Additional Information -->
+            <div class="form-row">
+
+            </div>
+        </div>
+        <center>
+            <!-- Consent/Agreement -->
+            <div class="form-col">
+                <label for="termsCheckbox">
+                    <input type="checkbox" id="termsCheckbox" required>
+                    I agree to the <a href src="">terms and conditions.</a>
+                </label>
+            </div>
+            <br>
+            <!-- Submit Button -->
+            <div class="form-col">
+                <input type="submit" value="Submit">
+            </div>
+        </center>
+    </form>
+
+
+
+<script>
+    // Get all input fields
+const inputFields = document.querySelectorAll('.appointment-form input[type="text"], .appointment-form input[type="date"], .appointment-form input[type="tel"], .appointment-form input[type="email"], .appointment-form input[type="time"], .appointment-form input[type="password"], .appointment-form select');
+
+// Loop through each input field and add event listeners for focus and blur
+inputFields.forEach(input => {
+    input.addEventListener('focus', function() {
+        input.classList.add('active');
+    });
+
+    input.addEventListener('blur', function() {
+        if (input.value === '') {
+            input.classList.remove('active');
+        }
+    });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-------------------------------------------Photo Background scrolling Effect---------------------------------------------------------->
+    
+        <section class="scroll-effect-section2">
+        </section>
+    
+        <!----------------------------------------------------------------footer------------------------------------------------------------------>
+        <footer class="footer-distributed">
+    
+            <div class="footer-left">
+              <a href="/index.html">
+                <img class="logo1" src="/assets/images/logo1.png"></a>
+    
+                <p class="footer-links">
+    
+                    <a href="#">About DR. Smith</a>
+                    |
+                    <a href="#">Services</a>
+                    |
+                    <a href="#">Contact Us</a>
+                    |
+                    <a href="#">Terms & Condition</a>
+                    |
+                    <a href="#">Privacy Policy</a>
+                </p>
+    
+                <p class="footer-company-name">Copyright © 2023 <strong>DIG107</strong> All rights reserved</p>
+            </div>
+    
+            <div class="footer-center">
+                <div>
+                    <i class="ri-map-pin-fill"></i>
+                    <p><span>Chisel Street</span>
+                        Castries, Saint Lucia</p>
+                </div><br>
+    
+                <div>
+                    <i class="ri-phone-fill"></i>
+                    <p>+1 (758) 726-6532</p>
+                </div><br>
+                <div>
+                    <i class="ri-mail-fill"></i>
+                    <p><a href="mailto:info@amandasmithhealth.com">info@amandasmithhealth.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    <strong>Amanda Smith Health Associates</strong> is a distinguished
+                    pediatric care provider founded by the compassionate and
+                    dedicated Amanda Smith. With a commitment to delivering
+                    exceptional healthcare for children, our team ensures a nurturing
+                    and supportive environment for young patients to thrive.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#"><i class="ri-whatsapp-fill"></i></a>
+                </div>
+            </div>
+        </footer>
+    
+    
+    
+    <!--------------------------------------------- Back to Top Button ------------------------------------------------->
+    <button id="back-to-top-btn" title="Go to Top"><i class="ri-arrow-up-fill"></i></button>
+    <script>
+        
+      // Scroll to top button functionality
+    const backToTopButton = document.getElementById('back-to-top-btn');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) { // Adjust the scroll position to show the button
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    </script>
+    <!--------------------------------------------- JAVA ------------------------------------------------->
+        <script src="/assets/js/main.js"></script>
+    </body>
+    
+    </html>
