@@ -434,7 +434,7 @@ left: 0;
 width: 100%;
 height: 100%;
 z-index: -1; /* Place it behind the content */
-background-image: url('/assets/images/backgroud-image.jpg');
+background-image: url('assets/images/backgroud-image.jpg');
 background-size: cover;
 background-attachment: fixed;
 filter: blur(1px); /* Adjust the pixel value for the desired level of blur */
@@ -456,7 +456,7 @@ left: 0;
 width: 100%;
 height: 100%;
 z-index: -1; /* Place it behind the content */
-background-image: url('/assets/images/backgroud-image3.jpg');
+background-image: url('assets/images/backgroud-image3.jpg');
 background-size: cover;
 background-attachment: fixed;
 filter: blur(9px); /* Adjust the pixel value for the desired level of blur */
@@ -479,7 +479,7 @@ left: 0;
 width: 100%;
 height: 100%;
 z-index: -1; /* Place it behind the content */
-background-image: url('/assets/images/backgroud-image2.jpg');
+background-image: url('assets/images/backgroud-image2.jpg');
 background-size: cover;
 background-attachment: fixed;
 filter: blur(px); /* Adjust the pixel value for the desired level of blur */
@@ -502,7 +502,7 @@ left: 0;
 width: 100%;
 height: 100%;
 z-index: -1; /* Place it behind the content */
-background-image: url('/assets/images/backgroud-image3.jpg');
+background-image: url('assets/images/backgroud-image3.jpg');
 background-size: cover;
 background-attachment: fixed;
 filter: blur(9px); /* Adjust the pixel value for the desired level of blur */
@@ -634,23 +634,23 @@ filter: blur(9px); /* Adjust the pixel value for the desired level of blur */
   }
   
   .blog-item.blog-1 {
-    background-image: url('/assets/images/blog1.jpg');
+    background-image: url('assets/images/blog1.jpg');
     background-size: cover;
     background-position: center;
     /* Remove height: 100%; */
   }
 
   .blog-item.blog-2 {
-    background-image: url('/assets/images/blog2.jpg');
+    background-image: url('assets/images/blog2.jpg');
   }
   .blog-item.blog-3 {
-    background-image: url('/assets/images/blog3.jpg');
+    background-image: url('assets/images/blog3.jpg');
   }
   .blog-item.blog-4 {
-    background-image: url('/assets/images/blog4.png');
+    background-image: url('assets/images/blog4.png');
   }
   .blog-item.blog-5 {
-    background-image: url('/assets/images/blog5.jpg');
+    background-image: url('assets/images/blog5.jpg');
   }
 
     /* ... Repeat for other blogs */

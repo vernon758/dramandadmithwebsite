@@ -228,7 +228,7 @@ left: 0;
 width: 100%;
 height: 100%;
 z-index: -1; /* Place it behind the content */
-background-image: url('/assets/images/backgroud-image2.jpg');
+background-image: url('assets/images/backgroud-image2.jpg');
 background-size: cover;
 background-attachment: fixed;
 filter: blur(px); /* Adjust the pixel value for the desired level of blur */
@@ -849,7 +849,7 @@ main.sign-up-mode .carousel {
   width: 55%;
   left: 45%;
   top: 0;
-  background-image: url(/assets/images/image1.png);
+  background-image: url(assets/images/image1.png);
   border-radius: 2rem;
   display: grid;
   grid-template-rows: auto 1fr;
