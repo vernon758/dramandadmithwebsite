@@ -434,7 +434,7 @@ left: 0;
 width: 100%;
 height: 100%;
 z-index: -1; /* Place it behind the content */
-background-image: url('assets/images/backgroud-image.jpg');
+background-image: url('https://vernon758.github.io/dramandadmithwebsite/assets/images/backgroud-image.jpg');
 background-size: cover;
 background-attachment: fixed;
 filter: blur(1px); /* Adjust the pixel value for the desired level of blur */
@@ -456,7 +456,7 @@ left: 0;
 width: 100%;
 height: 100%;
 z-index: -1; /* Place it behind the content */
-background-image: url('assets/images/backgroud-image3.jpg');
+background-image: url('https://vernon758.github.io/dramandadmithwebsite/assets/images/backgroud-image3.jpg');
 background-size: cover;
 background-attachment: fixed;
 filter: blur(9px); /* Adjust the pixel value for the desired level of blur */
@@ -479,7 +479,7 @@ left: 0;
 width: 100%;
 height: 100%;
 z-index: -1; /* Place it behind the content */
-background-image: url('assets/images/backgroud-image2.jpg');
+background-image: url('https://vernon758.github.io/dramandadmithwebsite/assets/images/backgroud-image2.jpg');
 background-size: cover;
 background-attachment: fixed;
 filter: blur(px); /* Adjust the pixel value for the desired level of blur */
