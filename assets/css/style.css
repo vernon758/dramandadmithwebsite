@@ -1470,6 +1470,20 @@ footer {
   }
 }
 
+
+@media (max-width: 880px) {
+    .box-container {
+        display: flex;
+        flex-direction: column; /* Display boxes in a column */
+        align-items: left; /* Center items horizontally */
+        margin-top: 20px;
+    }
+    
+    .box {
+        width: calc(100% - 30px); /* Adjust width for smaller screens */
+        margin-right: 0;
+    }
+   
   /*************************************************  Splash screen ******************************************/
 /* Styles for the splash screen */
 .splash-screen {
