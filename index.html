@@ -92,7 +92,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About DR. Smith</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
             <li><a href="contact.html">Contact Us</a></li>
 
             <li class="dropdown">
@@ -387,18 +387,17 @@ window.addEventListener('load', () => {
     </div>
 
 
-    <!-------------------------------------------Photo Background scrolling Effect---------------------------------------------------------->
-    <div class="video-container">
-      <video autoplay muted loop playsinline>
-          <source src="assets/vid/vid1.mp4" type="video/mp4">
-         
-      </video>
-      <div class="content">
-         
-      </div>
-  </div>
-  
-
+    <!-------------------------------------------Video Background scrolling Effect---------------------------------------------------------->
+    
+       <div class="video-container">
+        <video autoplay muted loop playsinline>
+            <source src="assets/vid1.mp4" type="video/mp4">
+           
+        </video>
+        <div class="content">
+           
+        </div>
+    </div>
     <!---------------------------------------------------Mission----------------------------------------------------------------------------->
 
     <section class="mission-section">
@@ -705,7 +704,9 @@ inputs.forEach((input) => {
     </section>
 
     <!----------------------------------------------------------------footer------------------------------------------------------------------>
-    <footer class="footer-distributed">
+    <footer>
+      <div class="footer-section">
+
 
         <div class="footer-left">
           <a href="/index.html">
@@ -724,44 +725,53 @@ inputs.forEach((input) => {
                 <a href="#">Privacy Policy</a>
             </p>
 
-            <p class="footer-company-name">Copyright © 2023 <strong>DIG107</strong> All rights reserved</p>
+            <p class="footer-company-name">Copyright © 2023 <strong>DIG107</strong> Final Project</p>
         </div>
+
+
 
         <div class="footer-center">
-            <div>
-                <i class="ri-map-pin-fill"></i>
-                <p><span>Chisel Street</span>
-                    Castries, Saint Lucia</p>
-            </div><br>
+          <div>
+              <i class="ri-map-pin-fill"></i>
+              <p>Chisel Street <br>
+                  Castries, Saint Lucia</p>
+          </div><br>
 
-            <div>
-                <i class="ri-phone-fill"></i>
-                <p>+1 (758) 726-6532</p>
-            </div><br>
-            <div>
-                <i class="ri-mail-fill"></i>
-                <p><a href="mailto:info@amandasmithhealth.com">info@amandasmithhealth.com</a></p>
-            </div>
+          <div>
+              <i class="ri-phone-fill"></i>
+              <p>+1 (758) 726-6532</p>
+          </div><br>
+          <div>
+              <i class="ri-mail-fill"></i>
+              <p><a href="mailto:info@amandasmithhealth.com">info@amandasmithhealth.com</a></p>
+          </div>
         </div>
+     
+
+
+
+
         <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the company</span>
-                <strong>Amanda Smith Health Associates</strong> is a distinguished
-                pediatric care provider founded by the compassionate and
-                dedicated Amanda Smith. With a commitment to delivering
-                exceptional healthcare for children, our team ensures a nurturing
-                and supportive environment for young patients to thrive.
-            </p>
-            <div class="footer-icons">
-                <a href="#"><i class="ri-facebook-fill"></i></a>
-                <a href="#"><i class="ri-instagram-fill"></i></a>
-                <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-                <a href="#"><i class="ri-whatsapp-fill"></i></a>
-            </div>
+          <h3>About Company</h3>
+        
+         <p> <strong>Amanda Smith Health Associates</strong> is a distinguished
+          pediatric care provider founded by the compassionate and
+          dedicated Amanda Smith. With a commitment to delivering
+          exceptional healthcare for children, our team ensures a nurturing
+          and supportive environment for young patients to thrive.
+      </p> <div class="footer-icons">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
         </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 All rights reserved. Website Designed by <a href="https://www.linkedin.com/in/vernon-francis/" target="_blank">Vernon Francis</a></p>
+      </div>
+      
     </footer>
-
-
 
 <!--------------------------------------------- Back to Top Button ------------------------------------------------->
 <button id="back-to-top-btn" title="Go to Top"><i class="ri-arrow-up-fill"></i></button>
