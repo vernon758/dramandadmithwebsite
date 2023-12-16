@@ -119,7 +119,125 @@
 
     <br><br>
     <div class="about-profile">
-        
+        <style>
+            *************************  About  *******************************************************/ 
+
+/* Base styles for the about profile */
+.about-profile {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  text-align: center; /* Center the inner elements horizontally */
+  flex-direction: column; 
+  margin: 0 auto; 
+}
+
+.profile-details p{
+  padding-top: 10%;
+  font-size: 15px;
+  color: #080808;
+  line-height: 1.6;
+}
+
+.aboutme {
+  padding-top: 0%;
+  position: relative;
+  text-align: center; /* Center-align the text */
+}
+
+.aboutme::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+
+
+.profile-image,
+.profile-details {
+  width: 100%; /* Ensure elements take full width */
+  text-align: center; /* Center-align elements */
+  padding: 20px;
+}
+
+.profile-image img {
+  width: 250px; /* Adjust image size for mobile view */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.profile-image img:hover{
+  transform: scale(1.05);
+}
+
+.contactme{
+  margin-top: 10%;
+  padding: 15px;
+  width: 250px;
+  background-color: var(--secondary-color);
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.contactme:hover{
+  box-shadow: 2px 2px 2px 2px #2c2c2c3f;
+  background-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px; /* Adjust icon size */
+  color: #333; /* Adjust icon color */
+}
+
+/* For tablet and larger screens */
+@media screen and (min-width: 768px) {
+  .about-profile {
+    flex-direction: row; /* Switch back to row layout */
+  }
+
+  .profile-image,
+  .profile-details {
+    width: 50%; /* Divide space equally for image and details */
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+  }
+
+  .profile-details {
+    padding-left: 40px; /* Add spacing between image and details */
+  }
+
+  .profile-image img {
+    width: 100%; /* Adjust image size */
+  }
+}
+
+/* Styles for social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-links i {
+  font-size: 24px;
+  color: #333;
+}
+        </style>
         <div class="profile-image">
           <img src="assets/images/doc-pic.jpg" alt="Profile Picture">
         </div>
