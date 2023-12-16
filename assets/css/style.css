@@ -1449,6 +1449,9 @@ footer {
 .footer-right{
   padding-top: 30px;
 }
+.footer-left img {
+  height: 60px;
+}
 
 .footer-center{
   padding-top: 20px;
